@@ -1,5 +1,7 @@
 # Orbit — Agentic Product Studio
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/xiaolianlian111/orbit-agentic-product-studio)
+
 Orbit turns a plain-language product idea into a working, interactive web app. It is an Atoms-inspired take-home demo focused on one belief: the valuable part of AI app generation is not a chat box, but a visible, reversible product workflow.
 
 ## What the reviewer can do
