@@ -1,6 +1,7 @@
 services:
   - type: web
-    name: orbit-agentic-product-studio
+    name: orbit-agentic-product-studio-111
+    plan: free
     runtime: node
     buildCommand: npm install
     startCommand: npm start
