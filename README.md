@@ -2,6 +2,8 @@
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/xiaolianlian111/orbit-agentic-product-studio)
 
+**Live demo:** https://orbit-agentic-product-studio-111.onrender.com
+
 Orbit turns a plain-language product idea into a working, interactive web app. It is an Atoms-inspired take-home demo focused on one belief: the valuable part of AI app generation is not a chat box, but a visible, reversible product workflow.
 
 ## What the reviewer can do
@@ -117,10 +119,12 @@ The checked-in application was tested in a real headless Microsoft Edge session 
 - prompt submitted;
 - all four agent stages completed;
 - generated project rendered;
-- generated iframe loaded 70 style rules;
+- generated iframe loaded 80 style rules;
 - generated list rendered three interactive records;
 - custom add dialog opened and created a persisted fourth record;
-- project version persisted locally.
+- project, version, and generated record all survived a full page reload;
+- mobile preview rendered at 390 px and switched the generated app to a single-column layout;
+- public assets returned `200`, while server source and environment-file paths returned `404`.
 
 Static checks were also run against both the studio script and the dynamically generated inline application script.
 

@@ -59,14 +59,13 @@ async function readJsonBody(request) {
 }
 
 async function generate(request, response) {
-  if (!process.env.OPENAI_API_KEY) {
-    return sendJson(response, 503, { error: 'AI provider is not configured' });
-  }
-
   try {
     const body = await readJsonBody(request);
     const prompt = String(body.prompt || '').trim().slice(0, 3000);
     if (!prompt) return sendJson(response, 400, { error: 'Prompt is required' });
+    if (!process.env.OPENAI_API_KEY) {
+      return sendJson(response, 200, { provider: 'local-fallback' });
+    }
 
     const providerResponse = await fetch('https://api.openai.com/v1/responses', {
       method: 'POST',
